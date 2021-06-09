@@ -1,0 +1,30 @@
+.pro-sidebar.rtl {
+    text-align: right;
+    direction: rtl;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15%;
+}
+.logo{
+    width: 100px;
+    height: 120px;
+    color: #fff;
+}
+.sidebar-header, .sidebar-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.header-title{
+    font-weight: bold;
+}
+.footer-title{
+    font-size: 13px;
+}
+.logout-btn{
+    width: 100%;
+    border-radius: 5px;
+}

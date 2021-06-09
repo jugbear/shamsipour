@@ -1,0 +1,7 @@
+.*
+media
+vnv
+!.gitignore
+__pycache__/
+migrations/
+*.pyc

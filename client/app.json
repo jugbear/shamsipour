@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "shamsipour university",
+    "slug": "shamsipour university",
+    "version": "1.0.0", 
+    "orientation": "portrait",
+    "icon": "./assets/final.png",
+    "splash": {
+      "image": "./src/assets/img/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "",
+    "android": {
+      "package": "com.jughead.blog"
+    }
+  }
+}
