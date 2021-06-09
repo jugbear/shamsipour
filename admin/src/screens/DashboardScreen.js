@@ -5,6 +5,8 @@ import {
   faChalkboardTeacher,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
+import history from "../components/core/history";
+
 import { Link } from "react-router-dom";
 import { Context as PostContext } from "../context/PostContext";
 import { Context as VideoContext } from "../context/VideoContext";
@@ -24,14 +26,16 @@ const DashboardScreen = () => {
     fetchUsers,
     userLogin,
   } = useContext(UserContext);
-
+  const userInformation = localStorage.getItem("userInfo");
   useEffect(() => {
     userLogin();
     fetchPosts();
     fetchUsers();
     fetchVideos();
-  }, []);
-  console.log("info", userInfo);
+    if (!userInformation) {
+      history.push("/login");
+    }
+  }, [userInformation]);
   return (
     <div>
       <div className="box-section">
