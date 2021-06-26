@@ -1,5 +1,4 @@
 .*
-media
 vnv
 !.gitignore
 __pycache__/

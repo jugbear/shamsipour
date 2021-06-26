@@ -6,7 +6,6 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import history from "../components/core/history";
-
 import { Link } from "react-router-dom";
 import { Context as PostContext } from "../context/PostContext";
 import { Context as VideoContext } from "../context/VideoContext";

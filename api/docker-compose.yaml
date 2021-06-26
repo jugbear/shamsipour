@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+    shams_database:
+        image: postgres
+        container_name: shams_Database
+        environment:
+            POSTGRES_PASSWORD: "postgres"
+        volumes:
+          - shams_database_volume:/var/lib/postgresql/data/
+        restart: always
+        ports:
+          - "5432:5432"
+
+volumes: 
+    shams_database_volume:
+        name: shams_database_volume
